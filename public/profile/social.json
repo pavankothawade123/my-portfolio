@@ -2,7 +2,7 @@
     "social": [
         {
             "network" : "linkedin",
-            "href": "https://linkedin.com"
+            "href": "https://www.linkedin.com/in/pavankothawade/"
         },
         {
             "network" : "github",
@@ -10,7 +10,7 @@
         },
         {
             "network" : "email",
-            "href": "mailto:test@test.com"
+            "href": "mailto:pavan.kothawade@gmail.com"
         }
     ]
 }
