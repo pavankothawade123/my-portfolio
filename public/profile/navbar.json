@@ -7,7 +7,32 @@
     "sections": [
         {
             "title": "Home",
-            "href": "/"
+            "href": "/my-portfolio"
+        },
+        {
+            "title": "About",
+            "href": "/my-portfolio/about"
+        },
+        {
+            "title": "Skills",
+            "href": "/my-portfolio/skills"
+        },
+        {
+            "title": "Education",
+            "href": "/my-portfolio/education"
+        },
+        {
+            "title": "Experience",
+            "href": "/my-portfolio/experience"
+        },
+        {
+            "title": "Projects",
+            "href": "/my-portfolio/projects"
+        },
+        {
+            "title": "Resume",
+            "href": "",
+            "type": "link"
         }
     ]
 
