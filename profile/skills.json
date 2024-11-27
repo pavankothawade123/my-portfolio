@@ -10,10 +10,6 @@
                     "title": "Java"
                 },
                 {
-                    "icon": "images/skills/php.png",
-                    "title": "PHP"
-                },
-                {
                     "icon": "images/skills/js.png",
                     "title": "JavaScript"
                 },
@@ -30,12 +26,20 @@
             "title": "Frameworks & Technologies",
             "items" : [
                 {
-                    "icon": "images/skills/android_new.png",
-                    "title": "Android"
+                    "icon": "images/skills/angular.webp",
+                    "title": "Angular"
                 },
                 {
                     "icon": "images/skills/react.png",
                     "title": "React"
+                },
+                {
+                    "icon": "images/skills/redux.png",
+                    "title": "Redux Toolkit"
+                },
+                {
+                    "icon": "images/skills/tailwind.png",
+                    "title": "Tailwind CSS"
                 },
                 {
                     "icon": "images/skills/nodejs.png",
@@ -47,8 +51,8 @@
             "title" : "Tools & Platforms",
             "items": [
                 {
-                    "icon": "images/skills/android-studio.png",
-                    "title": "Android Studio"
+                    "icon": "images/skills/jira.webp",
+                    "title": "Jira"
                 },
                 {
                     "icon": "images/skills/git.png",
