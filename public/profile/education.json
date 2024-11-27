@@ -1,19 +1,24 @@
 {
     "education":[
         {
-            "title": "Jun 20XX - Jun 20YY",
-            "cardTitle": "B.Tech, Computer Science",
-            "cardSubtitle":"XYZ University, City",
-            "cardDetailedText": "CGPA - 9.5",
-            "icon" : {
-                "src": "images/education/lorem-ipsum.png"
-            }
+            "title": "Oct 2024 - Present",
+            "cardTitle": "Masters in Business Analytics",
+            "cardSubtitle":"Trine University, Phoenix"
         },
         {
-            "title": "Apr 20XX",
-            "cardTitle": "High School",
-            "cardSubtitle":"ABC School, City",
-            "cardDetailedText": "Marks - 95%"
+            "title": "Oct 2024",
+            "cardTitle": "Masters in Engineering Management",
+            "cardSubtitle":"Trine University, Phoenix"
+        },
+        {
+            "title": "May 2019",
+            "cardTitle": "Masters in Software Engineering",
+            "cardSubtitle":"San Jose State University"
+        },
+        {
+            "title": "June 2015",
+            "cardTitle": "Bachelors in Computer Science",
+            "cardSubtitle":"Government College of Engineering, Aurangabad"
         }
     ]
 }

@@ -56,11 +56,11 @@ function About(props) {
             ? (
               <Fade bottom>
                 <Row style={styles.introTextContainer}>
-                  <Col style={styles.introTextContainer}>
-                    {parseIntro(data.about)}
-                  </Col>
                   <Col style={styles.introImageContainer}>
                     <img style={styles.profileImage} src={data?.imageSource} alt="profile" />
+                  </Col>
+                  <Col style={styles.introTextContainer}>
+                    {parseIntro(data.about)}
                   </Col>
                 </Row>
               </Fade>

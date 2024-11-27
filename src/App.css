@@ -148,3 +148,8 @@ section.timeline-card-content div.card-description > p {
   margin-bottom: 25px;
 }
 
+.skills-row {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}

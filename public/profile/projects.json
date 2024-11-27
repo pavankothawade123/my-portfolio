@@ -1,150 +1,90 @@
 {
     "projects" : [
         {
-            "image" : "images/projects/portfolio-poster.png",
-            "title": "Dev Portfolio",
-            "bodyText": "- Developer Portfolio Website made in React\n -  Fully customisable and dynamic, easily change data and images.\n - Dark Mode Support",
+            "image" : "images/projects/kayak.png",
+            "title": "Kayak Clone",
+            "bodyText": "- Team project for Enterprise Distributed Systems \n - This is a 3-tier application that implements the functions of Kayak for different travel services containing user and admin modules\n - Admin can add Flights, Cars and Hotels and also be able to delete the user and view the statistics.",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/dev-portfolio"
-                },
-                {
-                    "text": "Live",
-                    "href": "https://mayankagarwal.me"
+                    "href": "https://github.com/pavankothawade123/kayak-clone"
                 }
             ],
             "tags" : [
                 "React",
-                "Portfolio",
-                "JavaScript"
+                "Node",
+                "MySQL",
+                "MongoDB",
+                "Passport JS",
+                "Kafka",
+                "Redis",
+                "Recharts",
+                "JMeter",
+                "Mocha"
             ]
         },
         {
-            "image" : "images/projects/caaring-poster.png",
-            "title": "Caaring -  Cab Share App",
-            "bodyText": "- A Cab Sharing web app made using **Django** for **VIT** Students. People can create a new cab or request to join an existing cab.\n - Added User authentication and password reset using **SendGrid**.\n - Deployed on **heroku** using **gunicorn**.",
+            "image" : "images/projects/tesla.png",
+            "title": "Tesla Homepage",
+            "bodyText": "- Replicated Tesla’s minimalist, clean, and sleek aesthetic using a carefully chosen color palette and typography.\n -  Focus on user-centered design, with a strong emphasis on ease of navigation and visual clarity.\n - Used media queries to create a fully adaptive, responsive design for various screen sizes.",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Caaring"
+                    "href": "https://github.com/pavankothawade123/tesla-clone"
                 },
                 {
                     "text": "Live",
-                    "href": "http://caaring.herokuapp.com"
+                    "href": "https://tesla-clone-9gpdog3d9-pavan-kothawades-projects.vercel.app"
                 }
             ],
             "tags" : [
-                "Python",
-                "Django",
-                "BootStrap",
-                "SendGrid",
-                "Heroku",
-                "Gunicorn",
-                "VIT"
+                "React",
+                "Javascript",
+                "Styled Components",
+                "React Reveal"
             ]
         },
         {
-            "image" : "images/projects/quiet-hours-poster.jpg",
-            "title": "Quiet Hours App",
-            "bodyText": "- An Android App that **automatically silences** your phone during class hours, designed for **VITians**.\n - Option to select class **slots** and **custom time**.\n - Option to put on Vibrate instead of Silent.",
+            "image" : "images/projects/foodorder.png",
+            "title": "Pizza Shop",
+            "bodyText": "- Allows users to add pizzas to the cart with options for modifying quantities and calculating totals.\n - Uses Redux Toolkit for managing the cart's state, ensuring smooth interactions across the application.\n - Tailwind CSS is used to create a clean, responsive layout that adjusts seamlessly across devices.",
             "links": [
                 {
                     "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/QuietHours-Android"
+                    "href": "https://github.com/pavankothawade123/flavoro-clone"
+                },
+                {
+                    "text": "Live",
+                    "href": "https://flavoro-clone-84mhbu1zl-pavan-kothawades-projects.vercel.app"
+                }
+            ],
+            "tags" : [
+                "React",
+                "Redux Toolkit",
+                "Javascript",
+                "React Hot Toast",
+                "Tailwind CSS"
+            ]
+        },
+        {
+            "image" : "images/projects/aladdin.png",
+            "title": "Aladdin 2D Game",
+            "bodyText": "- Developed Aladdin 2D game using greenfoot \n - Aladdin follows a heroic journey where Aladdin overcomes enemies, retrieves a magic carpet, frees Genie from a flask, and conquers obstacles to reunite with Princess Jasmine.",
+            "links": [
+                {
+                    "text": "GitHub",
+                    "href": "https://github.com/pavankothawade123/aladdin-2d-game"
+                },
+                {
+                    "text": "Live",
+                    "href": "https://www.greenfoot.org/scenarios/19947"
                 }
             ],
             "tags" : [
                 "Java",
-                "Android",
-                "Alarm Manager",
-                "VIT"
-            ]
-        },
-        {
-            "title": "Secure Chat App",
-            "bodyText": "- An Android App that allows users to send texts in real time.\n - End to End encryption using **RSA** Algorithm.\n - Uses **Firebase** database to store texts.\n - Secured with **Fingerprint** lock.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/SecureChatApp"
-                }
-            ],
-            "tags" : [
-                "Java",
-                "Android",
-                "Firebase",
-                "RSA"
-            ]
-        },
-        {
-            "title": "MVVM Sample App",
-            "bodyText": "- An Android App that loads data from mock API and show in both **LinearLayout** and **GridLayout RecyclerView**.\n - Offline support using **Room** DB and **NetworkBoundResource**.\n - Uses the **MVVM** architecture.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/mvvm-sample-app"
-                }
-            ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Room",
-                "Coroutines",
-                "Flow",
-                "Hilt-Dagger",
-                "NetworkBoundResource"
-            ]
-        },
-        {
-            "title": "Feed List App",
-            "bodyText": "- An Android App that loads list of feeds from a **paginated** API and shows in a RecyclerView.\n - Uses the **MVVM** architecture.\n - Uses **Paging 3** library along with other Architecture Components.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/Paginated-App-Feeds-List"
-                }
-            ],
-            "tags" : [
-                "Kotlin",
-                "Android",
-                "MVVM",
-                "Paging 3",
-                "Coroutines",
-                "Flow"
-            ]
-        },
-        {
-            "title": "Task Tracker",
-            "bodyText": "- A simple Task Tracker web app made with **Angular 12**.\n - Uses **mock JSON server** to get, add, delete or update tasks.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/task-tracker-app"
-                }
-            ],
-            "tags" : [
-                "TypeScript",
-                "Angular 12",
-                "JavaScript"
-            ]
-        },
-        {
-            "title": "Image Encryption/Decryption",
-            "bodyText": "- A Web App for Image Encryption and Decryption made in **Django**.\n - Uses **SDES** algorithm for encryption/decryption.",
-            "links": [
-                {
-                    "text": "GitHub",
-                    "href": "https://github.com/mayankagarwal09/img-encrypt-sdes"
-                }
-            ],
-            "tags" : [
-                "Python",
-                "Django",
-                "SDES",
-                "Cryptography"
+                "Greenfoot"
             ]
         }
+
     ]
 }

@@ -48,7 +48,7 @@ function Home() {
           />
         </div>
         <Social />
-        <div>Portfolio coming soon! Thank you for your patience</div>
+        {/* <div>Portfolio coming soon! Thank you for your patience</div> */}
       </div>
     </Fade>
   ) : <FallbackSpinner />;

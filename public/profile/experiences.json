@@ -1,33 +1,37 @@
 {
     "experiences": [
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
+            "title": "Senior MTS - Full Stack",
+            "subtitle": "Prosimo.io",
             "workType": "Full-time",
             "workDescription": [
-                "Integrated **2** new product.",
-                "Worked on adding **def** to **bcd**. Improved speed by 50%."
+                "Delivered full-stack features using Angular & Go, reducing development time by 30% through effective planning and prioritization.",
+                "Responded swiftly to customer needs in a startup environment, delivering features and bug fixes within 24-48 hours",
+                "Led discussions with the product and QA teams to enhance UX and ensure bug-free applications with end-to-end testing (Cypress).",
+                "Designed and developed scalable RESTful APIs in Go, improving backend response times by 40%.",
+                "Ensured code quality and accelerated development through PR reviews, testing, and mentoring team members."
             ],
-            "dateText": "06/20XX – Present"
+            "dateText": "07/2019 – Present"
         },
         {
-            "title": "Software Engineer",
-            "subtitle": "XYZ Ltd",
+            "title": "Software Engineer Intern - Full Stack",
+            "subtitle": "Mist Systems",
             "workType": "Internship",
             "workDescription": [
-                "Worked on abc."
+                "Developed an Elasticsearch web application to back up customer data to AWS S3 which saved 40% of efforts.",
+                "Improved Grafana dashboard layout on both production and staging for efficient lookups"
             ],
-            "dateText": "01/20XX – 05/20XX"
+            "dateText": "06/2018 – 12/2018"
         },
         {
-            "title": "App Developer",
-            "subtitle": "ABC Pvt Ltd",
-            "workType": "Freelance",
+            "title": "Software Engineer - Full Stack",
+            "subtitle": "Tata Consultancy Services",
+            "workType": "Full Time",
             "workDescription": [
-                "Developed the official apps for the startup for both Android and iOS using hybrid framework.",
-                "Done bcd work."
+                "Developed a Trulicity web application to be used by 50000+ patients for an American Pharmaceutical Company",
+                "Integrated AngularJS with Java APIs for efficient frontend-backend communication."
             ],
-            "dateText": "09/20XX – 01/20YY"
+            "dateText": "08/2015 – 06/2017"
         }
     ]
 }
