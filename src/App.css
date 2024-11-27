@@ -153,3 +153,7 @@ section.timeline-card-content div.card-description > p {
     justify-content: center;
     gap: 25px;
 }
+.navbar-center {
+    display: flex;
+    justify-content: center;
+}
