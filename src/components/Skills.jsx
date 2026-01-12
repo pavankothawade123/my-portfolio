@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
 import PropTypes from 'prop-types';
-import Fade from 'react-reveal';
+
 import { Container } from 'react-bootstrap';
 import Header from './Header';
 import endpoints from '../constants/endpoints';
@@ -42,7 +42,7 @@ function Skills(props) {
     <>
       <Header title={header} />
       {data ? (
-        <Fade>
+        
           <div className="section-content-container">
             <Container>
               {renderSkillsIntro(data.intro)}
@@ -66,7 +66,7 @@ function Skills(props) {
               ))}
             </Container>
           </div>
-        </Fade>
+        
       ) : <FallbackSpinner /> }
     </>
   );

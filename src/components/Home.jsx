@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Typewriter from 'typewriter-effect';
-import Fade from 'react-reveal';
+import { TypeAnimation } from 'react-type-animation';
 import endpoints from '../constants/endpoints';
 import Social from './Social';
 import FallbackSpinner from './FallbackSpinner';
@@ -34,23 +33,20 @@ function Home() {
   }, []);
 
   return data ? (
-    <Fade>
-      <div style={styles.mainContainer}>
-        <h1 style={styles.nameStyle}>{data?.name}</h1>
-        <div style={{ flexDirection: 'row' }}>
-          <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
-          <Typewriter
-            options={{
-              loop: true,
-              autoStart: true,
-              strings: data?.roles,
-            }}
-          />
-        </div>
-        <Social />
-        {/* <div>Portfolio coming soon! Thank you for your patience</div> */}
+    <div style={styles.mainContainer}>
+      <h1 style={styles.nameStyle}>{data?.name}</h1>
+      <div style={{ flexDirection: 'row' }}>
+        <h2 style={styles.inlineChild}>I&apos;m&nbsp;</h2>
+        <TypeAnimation
+          sequence={data?.roles?.flatMap(role => [role, 2000]) || []}
+          wrapper="h2"
+          speed={50}
+          style={styles.inlineChild}
+          repeat={Infinity}
+        />
       </div>
-    </Fade>
+      <Social />
+    </div>
   ) : <FallbackSpinner />;
 }
 

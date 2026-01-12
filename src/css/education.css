@@ -6,6 +6,26 @@
     justify-content: center;
 }
 
+/* Remove blue background from timeline dates */
+.timeline-item-title,
+.timeline-card-title,
+div[class*="title"],
+span[class*="title"] {
+    background: transparent !important;
+}
+
+/* Ensure timeline titles don't have blue background */
+.react-chrono-timeline .timeline-item-title {
+    background: transparent !important;
+    padding: 0 !important;
+}
+
+/* Override any active state blue background */
+.timeline-item-title.active,
+.timeline-card-title.active {
+    background: transparent !important;
+}
+
 @media only screen and (max-width: 578px) {
     div.vertical-item-row > div:nth-child(1) {
         width: 20% !important;

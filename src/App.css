@@ -13,13 +13,13 @@
 }
 
 .navbar__link {
-  margin-left: 0.75em;
-  margin-right: 0.75em;
+  margin-left: 1.25em;
+  margin-right: 1.25em;
   font-size: 1em;
   cursor: pointer;
   text-decoration: none;
-  letter-spacing: .1em;
-  text-indent: .3em;
+  letter-spacing: normal;
+  text-indent: 0;
   border-bottom: 3px solid transparent;
 }
 
@@ -35,7 +35,7 @@
 
  .navbar__link:hover::after {
   visibility: visible;
-  width: 40%;
+  width: 100%;
 }
 
 .navbar__link--active::after {

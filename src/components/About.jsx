@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { Container, Col, Row } from 'react-bootstrap';
 import PropTypes from 'prop-types';
-import Fade from 'react-reveal';
+
 import Header from './Header';
 import endpoints from '../constants/endpoints';
 import FallbackSpinner from './FallbackSpinner';
@@ -32,19 +32,13 @@ function About(props) {
   const { header } = props;
   const [data, setData] = useState(null);
 
-  const parseIntro = (text) => (
-    <ReactMarkdown
-      children={text}
-    />
-  );
-
   useEffect(() => {
     fetch(endpoints.about, {
       method: 'GET',
     })
       .then((res) => res.json())
       .then((res) => setData(res))
-      .catch((err) => err);
+      .catch((err) => console.error('Failed to fetch about data:', err));
   }, []);
 
   return (
@@ -54,16 +48,14 @@ function About(props) {
         <Container>
           {data
             ? (
-              <Fade bottom>
-                <Row style={styles.introTextContainer}>
-                  <Col style={styles.introImageContainer}>
-                    <img style={styles.profileImage} src={data?.imageSource} alt="profile" />
-                  </Col>
-                  <Col style={styles.introTextContainer}>
-                    {parseIntro(data.about)}
-                  </Col>
-                </Row>
-              </Fade>
+              <Row style={styles.introTextContainer}>
+                <Col style={styles.introImageContainer}>
+                  <img style={styles.profileImage} src={data?.imageSource} alt="profile" />
+                </Col>
+                <Col style={styles.introTextContainer}>
+                  <ReactMarkdown>{data.about}</ReactMarkdown>
+                </Col>
+              </Row>
             )
             : <FallbackSpinner />}
         </Container>

@@ -1,12 +1,13 @@
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import React, { useEffect, useState, useContext } from 'react';
-import { withRouter } from 'react-router';
+import { useEffect, useState, useContext } from 'react';
 import { NavLink } from 'react-router-dom';
 import styled, { ThemeContext } from 'styled-components';
 import endpoints from '../constants/endpoints';
 import ThemeToggler from './ThemeToggler';
 
-const ExternalNavLink = styled.a`
+const ExternalNavLink = styled.a.attrs({
+  className: 'navbar__link'
+})`
   color: ${(props) => props.theme.navbarTheme.linkColor};
   &:hover {
     color: ${(props) => props.theme.navbarTheme.linkHoverColor};
@@ -16,7 +17,9 @@ const ExternalNavLink = styled.a`
   }
 `;
 
-const InternalNavLink = styled(NavLink)`
+const InternalNavLink = styled(NavLink).attrs({
+  className: 'navbar__link'
+})`
   color: ${(props) => props.theme.navbarTheme.linkColor};
   &:hover {
     color: ${(props) => props.theme.navbarTheme.linkHoverColor};
@@ -27,6 +30,12 @@ const InternalNavLink = styled(NavLink)`
   &.navbar__link--active {
     color: ${(props) => props.theme.navbarTheme.linkActiveColor};
   }
+`;
+
+const ThemeTogglerWrapper = styled.div`
+  margin-left: 2em;
+  display: flex;
+  align-items: center;
 `;
 
 const NavBar = () => {
@@ -53,6 +62,10 @@ const NavBar = () => {
       expanded={expanded}
     >
       <Container>
+        <Navbar.Toggle
+          aria-controls="responsive-navbar-nav"
+          onClick={() => setExpanded(!expanded)}
+        />
         <Navbar.Collapse className="navbar-center" id="responsive-navbar-nav">
           <Nav>
             {data
@@ -63,7 +76,6 @@ const NavBar = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                   onClick={() => setExpanded(false)}
-                  className="navbar__link"
                   theme={theme}
                 >
                   {section.title}
@@ -72,24 +84,26 @@ const NavBar = () => {
                 <InternalNavLink
                   key={section.title}
                   onClick={() => setExpanded(false)}
-                  exact={index === 0}
-                  activeClassName="navbar__link--active"
-                  className="navbar__link"
+                  end={index === 0}
                   to={section.href}
                   theme={theme}
+                  className={({ isActive }) =>
+                    `navbar__link${isActive ? ' navbar__link--active' : ''}`
+                  }
                 >
                   {section.title}
                 </InternalNavLink>
               )))}
           </Nav>
-          <ThemeToggler
-            onClick={() => setExpanded(false)}
-          />
+          <ThemeTogglerWrapper>
+            <ThemeToggler
+              onClick={() => setExpanded(false)}
+            />
+          </ThemeTogglerWrapper>
         </Navbar.Collapse>
       </Container>
     </Navbar>
   );
 };
 
-const NavBarWithRouter = withRouter(NavBar);
-export default NavBarWithRouter;
+export default NavBar;
