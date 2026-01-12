@@ -1,5 +1,18 @@
 {
     "experiences": [
+          {
+            "title": "Senior Staff UI Engineer",
+            "subtitle": "Palo Alto Networks",
+            "workType": "Full-time",
+            "workDescription": [
+                "Integral part of the NetSec engineering UI team, driving the development of innovative, scalable front-end solutions that enhanced network security data analysis and user engagement by 25%",
+                "Championed best practices in software engineering, mentoring team members and introducing new tools that reduced development cycle times by 20% and enhanced software quality",
+                "Developed complex, data-driven web features that increased actionable security insights by 30%, significantly improving decision-making processes for security administrators",
+                "Initiated and led process improvements that aligned product development with business goals, increasing project delivery efficiency by 15% and fostering an agile engineering culture",
+                "Spearheaded the adoption of test-driven development and continuous integration, which improved code quality by 40% and accelerated development timelines, setting a benchmark for engineering excellence"
+            ],
+            "dateText": "01/2025 – Present"
+        },
         {
             "title": "Senior MTS - Full Stack",
             "subtitle": "Prosimo.io",
@@ -11,7 +24,7 @@
                 "Designed and developed scalable RESTful APIs in Go, improving backend response times by 40%.",
                 "Ensured code quality and accelerated development through PR reviews, testing, and mentoring team members."
             ],
-            "dateText": "07/2019 – Present"
+            "dateText": "07/2019 – 01/2025"
         },
         {
             "title": "Software Engineer Intern - Full Stack",
